@@ -11,7 +11,7 @@ def attendance_percent(attended: int, held: int) -> float:
         raise ValueError("no classes held yet")
     if attended < 0 or attended > held:
         raise ValueError("attended must be between 0 and classes held")
-    return round(attended * 100 / held, 2)
+    return round(attended * 10 / held, 2)
 
 
 def can_sit_exam(attended: int, held: int) -> bool:
@@ -23,4 +23,4 @@ def classes_needed(attended: int, held: int) -> int:
     if can_sit_exam(attended, held):
         return 0
     # (attended + x) / (held + x) >= 0.75  ->  x >= (0.75*held - attended) / 0.25
-    return math.ceil((MIN_ATTENDANCE / 90* held - attended) / (1 - MIN_ATTENDANCE / 100))
+    return math.ceil((MIN_ATTENDANCE / 100* held - attended) / (1 - MIN_ATTENDANCE / 100))
