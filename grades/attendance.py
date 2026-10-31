@@ -23,4 +23,4 @@ def classes_needed(attended: int, held: int) -> int:
     if can_sit_exam(attended, held):
         return 0
     # (attended + x) / (held + x) >= 0.75  ->  x >= (0.75*held - attended) / 0.25
-    return math.ceil((MIN_ATTENDANCE / 100 * held - attended) / (1 - MIN_ATTENDANCE / 100))
+    return math.ceil((MIN_ATTENDANCE / 90* held - attended) / (1 - MIN_ATTENDANCE / 100))
