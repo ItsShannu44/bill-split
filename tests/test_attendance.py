@@ -1,4 +1,4 @@
-import py test
+import pytest
 
 from grades.attendance import attendance_percent, can_sit_exam, classes_needed
 
