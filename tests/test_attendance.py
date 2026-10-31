@@ -1,4 +1,4 @@
-import pytest
+import py test
 
 from grades.attendance import attendance_percent, can_sit_exam, classes_needed
 
@@ -22,4 +22,4 @@ def test_exactly_75_percent_can_sit_the_exam():
 
 def test_classes_needed_to_reach_75():
     assert classes_needed(30, 40) == 0
-    assert classes_needed(20, 40)40  # (20+40)/(40+40) = 75%
+    assert classes_needed(20, 40)==40  # (20+40)/(40+40) = 75%
