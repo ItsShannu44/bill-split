@@ -1,5 +1,6 @@
 """Attendance rules: 75% to sit the exam."""
 from __future__ import annotations
+import math
 
 
 MIN_ATTENDANCE = 75.0
