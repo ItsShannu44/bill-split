@@ -11,7 +11,7 @@ def attendance_percent(attended: int, held: int) -> float:
         raise ValueError("no classes held yet")
     if attended < 0 or attended > held:
         raise ValueError("attended must be between 0 and classes held")
-    return round(attended * 100 / held, 2)
+    return round(attended * 10 / held, 2)
 
 
 def can_sit_exam(attended: int, held: int) -> bool:
