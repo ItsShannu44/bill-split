@@ -7,7 +7,7 @@ import math
 MIN_ATTENDANCE = 75.0
 
 
-def attendance_percent(attended: int, held: int) -> float
+def attendance_percent(attended: int, held: int) -> float:
     if held <= 0:
         raise ValueError("no classes held yet")
     if attended < 0 or attended > held:
